@@ -1,0 +1,139 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.notification-content {
+    margin-top: 80px;
+    margin-left: 280px; 
+    width: calc(100% - 280px); 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.notification-title {
+    color: #d32f2f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notification-card {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-left: 4px solid #9e9e9e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .notification-card.unread {
+    border-left: 4px solid #d32f2f;
+    background-color: #fef5f5;
+} */
+
+.notification-message {
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.notification-date {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.notification-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+}
+
+.action-button.mark-read {
+    background-color: #4caf50;
+    color: white;
+}
+
+.action-button.dismiss {
+    background-color: #f44336;
+    color: white;
+}
+.view-details-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn.donor-btn {
+    background-color: #007bff;
+    color: white;
+    margin-right: 10px; 
+}
+
+.view-details-btn.donor-btn:hover {
+    background-color: #0056b3;
+}
+
+.view-details-btn.hospital-btn {
+    background-color: #28a745; 
+    color: white;
+}
+
+.view-details-btn.hospital-btn:hover {
+    background-color: #218838;
+}
+
+.details-card {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details-card.donor-details {
+    background-color: #e0f7fa; 
+    border-left: 5px solid #007bff;
+}
+
+.details-card.donor-details h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.details-card.hospital-details {
+    background-color: #e9f5e9; 
+    border-left: 5px solid #28a745;
+}
+
+.details-card.hospital-details h4 {
+    margin-top: 0;
+    color: #28a745;
+}
+
+.details-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
